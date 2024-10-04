@@ -10,7 +10,9 @@ app.post('/', (req, res) => {
   const now = new Date()
   const hours = now.getHours()
   const minutes = now.getMinutes()
-  res.send(`Connected at ${hours}:${minutes}`)
+  const text = `Connected at ${hours}:${minutes}`
+  console.log(text})
+  res.send(text)
 })
 
 app.listen(port, () => {
