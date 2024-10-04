@@ -11,7 +11,7 @@ app.post('/', (req, res) => {
   const hours = now.getHours()
   const minutes = now.getMinutes()
   const text = `Connected at ${hours}:${minutes}`
-  console.log(text})
+  console.log(text)
   res.send(text)
 })
 
